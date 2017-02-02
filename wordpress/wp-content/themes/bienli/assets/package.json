@@ -1,0 +1,22 @@
+{
+  "name": "Wordpress-Theme-Bienli",
+  "version": "0.0.1",
+  "description": "Wordpress Theme für bienlistorten.ch",
+  "repository": "https://github.com/ettisberger/bienli-wp.git",
+  "main": "Gruntfile.js",
+  "author": "andy@ettisberger.ch",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "*",
+    "grunt": "*",
+    "grunt-bower-concat": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-postcss": "*"
+  }
+}

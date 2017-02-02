@@ -5,7 +5,7 @@ wordpress/*
 wordpress/wp-content/*
 !wordpress/wp-content/themes/
 wordpress/wp-content/themes/*
-!wordpress/wp-content/themes/aet-default/
+!wordpress/wp-content/themes/bienli/
 
 # Logs
 logs
@@ -38,8 +38,8 @@ Icon?
 Thumbs.db
 
 # Node Files #
-/node_modules
-/bower_components
+node_modules
+bower_components
 
 # Coverage #
 /coverage/
