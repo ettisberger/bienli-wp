@@ -2,6 +2,7 @@
 /* VARIABLES */
 /************************************************************/
 $tablet-min-width: 768px;
+$small-desktop-min-width: 992px;
 $desktop-min-width: 1000px;
 
 /************************************************************/
@@ -14,7 +15,6 @@ $desktop-min-width: 1000px;
   }
 }
 
-
 @mixin bienli-tablet {
   @media (min-width: #{$tablet-min-width}) and (max-width: #{$desktop-min-width - 1px}) {
     @content;
@@ -23,6 +23,12 @@ $desktop-min-width: 1000px;
 
 @mixin bienli-desktop {
   @media (min-width: #{$desktop-min-width}) {
+    @content;
+  }
+}
+
+@mixin bienli-small-desktop {
+  @media (min-width: #{$small-desktop-min-width}) and (max-width: #{$desktop-min-width - 1px}) {
     @content;
   }
 }

@@ -11,6 +11,10 @@
     width: 1200px;
   }
 
+  @include bienli-small-desktop {
+    width: 970px;
+  }
+
   @include bienli-tablet {
     padding: 0 20px;
   }

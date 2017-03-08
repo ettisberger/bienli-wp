@@ -7,5 +7,6 @@ Description: Custom wordpress theme based for naturalaesthetics.ch
 Version: 0.1
 */
 
+//@import "../node_modules/flexboxgrid-sass/flexboxgrid";
 @import "layout/typography", "layout/_body", "layout/reset";
 @import "components/containers", "components/footer", "components/header", "components/navigation";

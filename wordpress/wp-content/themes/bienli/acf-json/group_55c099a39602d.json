@@ -3,222 +3,105 @@
     "title": "Layout - Fusszeile",
     "fields": [
         {
-            "layouts": [
-                {
-                    "key": "56b473e7a6482",
-                    "name": "standard_footer",
-                    "label": "Standard Footer",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "placement": "top",
-                            "endpoint": 0,
-                            "key": "field_55c0ba549d9cc",
-                            "label": "Spalte Links",
-                            "name": "",
-                            "type": "tab",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            }
-                        },
-                        {
-                            "default_value": "",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "key": "field_55c099a9daa15",
-                            "label": "Titel",
-                            "name": "column_left_title",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "readonly": 0,
-                            "disabled": 0
-                        },
-                        {
-                            "post_type": [
-                                "page"
-                            ],
-                            "taxonomy": [],
-                            "allow_null": 0,
-                            "multiple": 1,
-                            "return_format": "id",
-                            "ui": 1,
-                            "key": "field_55c09a13daa17",
-                            "label": "Navigation Allgemein",
-                            "name": "column_left_navigation_general",
-                            "type": "post_object",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            }
-                        },
-                        {
-                            "placement": "top",
-                            "endpoint": 0,
-                            "key": "field_55c0ba9a9d9cd",
-                            "label": "Spalte Mitte",
-                            "name": "",
-                            "type": "tab",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            }
-                        },
-                        {
-                            "default_value": "",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "key": "field_55c09a46daa18",
-                            "label": "Titel",
-                            "name": "column_center_title",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "readonly": 0,
-                            "disabled": 0
-                        },
-                        {
-                            "tabs": "all",
-                            "toolbar": "basic",
-                            "media_upload": 1,
-                            "default_value": "",
-                            "delay": 0,
-                            "key": "field_55c0bbd6d7f3b",
-                            "label": "Kontakt",
-                            "name": "column_center_contact",
-                            "type": "wysiwyg",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            }
-                        },
-                        {
-                            "placement": "top",
-                            "endpoint": 0,
-                            "key": "field_55c0babd9d9ce",
-                            "label": "Spalte Rechts",
-                            "name": "",
-                            "type": "tab",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            }
-                        },
-                        {
-                            "default_value": "",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "key": "field_55c09ab5daa19",
-                            "label": "Titel",
-                            "name": "column_right_title",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "readonly": 0,
-                            "disabled": 0
-                        },
-                        {
-                            "default_value": "",
-                            "new_lines": "wpautop",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "rows": "",
-                            "key": "field_55c09ac2daa1a",
-                            "label": "Beschreibung",
-                            "name": "column_right_description",
-                            "type": "textarea",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "readonly": 0,
-                            "disabled": 0
-                        },
-                        {
-                            "return_format": "id",
-                            "preview_size": "medium",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": "",
-                            "key": "field_55c09dfd60209",
-                            "label": "Bild",
-                            "name": "column_right_image",
-                            "type": "image",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            }
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                }
-            ],
-            "min": "",
-            "max": "",
-            "button_label": "Add Footer",
+            "placement": "top",
+            "endpoint": 0,
             "key": "field_56b473e2cf37e",
-            "label": "Footer Container",
-            "name": "footer",
-            "type": "flexible_content",
+            "label": "Left",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_58c062891471c",
+            "label": "Title",
+            "name": "column-left-title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "post_type": [],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "object",
+            "ui": 1,
+            "key": "field_58c062a81471d",
+            "label": "Links",
+            "name": "column-left-links",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "placement": "top",
+            "endpoint": 0,
+            "key": "field_58c062c81471e",
+            "label": "Right",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_58c062df439db",
+            "label": "Title",
+            "name": "column-right-title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "default_value": "",
+            "delay": 0,
+            "key": "field_58c062f0439dc",
+            "label": "Text",
+            "name": "column-right-text",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -246,5 +129,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1486061011
+    "modified": 1489004105
 }

@@ -178,6 +178,11 @@ ul {
     width: 1200px;
   }
 }
+@media (min-width: 992px) and (max-width: 999px) {
+  .bienli-inlay {
+    width: 970px;
+  }
+}
 @media (min-width: 768px) and (max-width: 999px) {
   .bienli-inlay {
     padding: 0 20px;
@@ -237,7 +242,7 @@ ul {
   background-color: #333;
   color: #FFF;
   padding: 5rem 0;
-  border-top: 5px solid #2180ff;
+  border-top: 5px solid #ff69B4;
 }
 .bienli-main-footer .bienli-footer-box {
   -ms-flex: 1;
@@ -298,7 +303,7 @@ ul {
   background-size: cover;
   background-position: center;
   background-color: #567;
-  border-bottom: 1rem solid;
+  border-bottom: 1rem solid #ff69B4;
   height: 60%;
 }
 
