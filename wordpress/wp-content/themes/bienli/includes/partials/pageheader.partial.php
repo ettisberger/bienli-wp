@@ -3,4 +3,4 @@
     $image = get_field('page-image');
 ?>
 
-<header class="na-page-header" style="background-image: url('<?php echo $image; ?>');"></header>
+<header class="bienli-page-header" style="background-image: url('<?php echo $image; ?>');"></header>

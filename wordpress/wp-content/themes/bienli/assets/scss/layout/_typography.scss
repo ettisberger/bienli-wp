@@ -8,7 +8,7 @@ body, html {
   color: $color-black;
 }
 
-h1, %na-heading-1, h2, %na-heading-2, h3, %na-heading-3, h4, %na-heading-4, h5, %na-heading-5, h6, %na-heading-6 {
+h1, %bienli-heading-1, h2, %bienli-heading-2, h3, %bienli-heading-3, h4, %bienli-heading-4, h5, %bienli-heading-5, h6, %bienli-heading-6 {
   font-weight: 600;
   color: $color-blue;
   line-height: $line-height-headings;
@@ -23,24 +23,24 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5em;
 }
 
-@include na-desktop {
-  h1, %na-heading-1 {
+@include bienli-desktop {
+  h1, %bienli-heading-1 {
     font-size: 4.10rem;
   }
 
-  h2, %na-heading-2 {
+  h2, %bienli-heading-2 {
     font-size: 2.80rem;
   }
 
-  h3, %na-heading-3 {
+  h3, %bienli-heading-3 {
     font-size: 2.00rem;
   }
 
-  h4, %na-heading-4 {
+  h4, %bienli-heading-4 {
     font-size: 1.50rem;
   }
 
-  h5, %na-heading-5 {
+  h5, %bienli-heading-5 {
     font-size: 1.15rem;
   }
 }

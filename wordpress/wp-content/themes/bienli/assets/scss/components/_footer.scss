@@ -15,22 +15,22 @@
 /************************************************************/
 /* CLASSES */
 /************************************************************/
-.na-main-footer {
+.bienli-main-footer {
   background-color: $color-black;
   color: $color-white;
   padding: 5rem 0;
   border-top: 5px solid $color-blue;
 
-  .na-footer-box {
+  .bienli-footer-box {
     flex: 1;
     display: block;
 
-    .na-footer-box-title {
-      @extend %na-heading-5;
+    .bienli-footer-box-title {
+      @extend %bienli-heading-5;
       color: $color-white;
     }
 
-    .na-footer-box-content {
+    .bienli-footer-box-content {
       margin-top: 1.0rem;
       height: 7.0 * $line-height-body;
     }

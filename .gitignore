@@ -7,6 +7,9 @@ wordpress/wp-content/*
 wordpress/wp-content/themes/*
 !wordpress/wp-content/themes/bienli/
 
+.tmp/
+.sass-cache/
+
 # Logs
 logs
 *.log

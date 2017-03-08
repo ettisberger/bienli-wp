@@ -29,7 +29,7 @@ body, html {
   color: #333;
 }
 
-h1, h2, h3, h4, h5, .na-main-footer .na-footer-box .na-footer-box-title, h6 {
+h1, h2, h3, h4, h5, .bienli-main-footer .bienli-footer-box .bienli-footer-box-title, h6 {
   font-weight: 600;
   color: #2180ff;
   line-height: 1.3em;
@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.50rem;
   }
 
-  h5, .na-main-footer .na-footer-box .na-footer-box-title {
+  h5, .bienli-main-footer .bienli-footer-box .bienli-footer-box-title {
     font-size: 1.15rem;
   }
 }
@@ -166,43 +166,43 @@ ul {
 /************************************************************/
 /* MIXINS */
 /************************************************************/
-.na-main {
+.bienli-main {
   height: 100%;
 }
 
-.na-inlay {
+.bienli-inlay {
   margin: 0 auto;
 }
 @media (min-width: 1000px) {
-  .na-inlay {
+  .bienli-inlay {
     width: 1200px;
   }
 }
 @media (min-width: 768px) and (max-width: 999px) {
-  .na-inlay {
+  .bienli-inlay {
     padding: 0 20px;
   }
 }
 @media (max-width: 767px) {
-  .na-inlay {
+  .bienli-inlay {
     padding: 0 20px;
   }
 }
 
-.na-section {
+.bienli-section {
   padding: 3rem 0;
 }
 
-.na-even {
+.bienli-even {
   color: #333;
   background-color: #FFF;
 }
 
-.na-odd {
+.bienli-odd {
   color: #FFF;
   background-color: #333;
 }
-.na-odd h2, .na-odd h3, .na-odd h4, .na-odd h5 {
+.bienli-odd h2, .bienli-odd h3, .bienli-odd h4, .bienli-odd h5 {
   color: #FFF;
 }
 
@@ -233,28 +233,28 @@ ul {
 /************************************************************/
 /* CLASSES */
 /************************************************************/
-.na-main-footer {
+.bienli-main-footer {
   background-color: #333;
   color: #FFF;
   padding: 5rem 0;
   border-top: 5px solid #2180ff;
 }
-.na-main-footer .na-footer-box {
+.bienli-main-footer .bienli-footer-box {
   -ms-flex: 1;
       flex: 1;
   display: block;
 }
-.na-main-footer .na-footer-box .na-footer-box-title {
+.bienli-main-footer .bienli-footer-box .bienli-footer-box-title {
   color: #FFF;
 }
-.na-main-footer .na-footer-box .na-footer-box-content {
+.bienli-main-footer .bienli-footer-box .bienli-footer-box-content {
   margin-top: 1.0rem;
   height: 11.2em;
 }
-.na-main-footer a {
+.bienli-main-footer a {
   color: #FFF;
 }
-.na-main-footer ul {
+.bienli-main-footer ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -275,7 +275,7 @@ ul {
 /************************************************************/
 /* MIXINS */
 /************************************************************/
-.na-main-header {
+.bienli-main-header {
   position: fixed;
   top: 0;
   left: 0;
@@ -285,26 +285,21 @@ ul {
   padding: 15px 30px;
 }
 @media (max-width: 767px) {
-  .na-main-header {
+  .bienli-main-header {
     padding: 5px 10px;
   }
 }
-
-.na-main-header-logo {
-  float: left;
-  height: 70px;
+.bienli-main-header-logo-icon {
+  color: #FFF;
 }
 
-.na-page-header {
-  background-color: #567;
-  border-bottom: 1rem solid;
-  height: 60%;
-}
-.na-page-header .na-page-image {
+.bienli-page-header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100%;
+  background-color: #567;
+  border-bottom: 1rem solid;
+  height: 60%;
 }
 
 /************************************************************/
@@ -322,36 +317,14 @@ ul {
 /************************************************************/
 /* MIXINS */
 /************************************************************/
-.na-main-navigation {
-  -ms-flex: 1;
-      flex: 1;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
+.bienli-main-navigation {
+  text-align: end;
 }
-@media (min-width: 1000px) {
-  .na-main-navigation {
-    margin-right: 35px;
-  }
-}
-.na-main-navigation .navigation-item {
+.bienli-main-navigation li {
   display: inline-block;
+  padding-right: 1rem;
 }
-.na-main-navigation .navigation-item:not(:first-child) {
-  margin-left: 10px;
-}
-.na-main-navigation .navigation-item:hover a {
-  color: #2180ff;
-}
-.na-main-navigation .navigation-item a {
+.bienli-main-navigation a {
   color: #FFF;
-  text-transform: uppercase;
   text-decoration: none;
-}
-.na-main-navigation .navigation-item > .navigation-target {
-  padding: 25px 30px;
-}
-.na-main-navigation .navigation-item .router-link-active {
-  color: #2180ff;
 }

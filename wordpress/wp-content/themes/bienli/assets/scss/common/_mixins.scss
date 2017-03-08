@@ -8,20 +8,20 @@ $desktop-min-width: 1000px;
 /* MIXINS */
 /************************************************************/
 
-@mixin na-phone {
+@mixin bienli-phone {
   @media (max-width: #{$tablet-min-width - 1px}) {
     @content;
   }
 }
 
 
-@mixin na-tablet {
+@mixin bienli-tablet {
   @media (min-width: #{$tablet-min-width}) and (max-width: #{$desktop-min-width - 1px}) {
     @content;
   }
 }
 
-@mixin na-desktop {
+@mixin bienli-desktop {
   @media (min-width: #{$desktop-min-width}) {
     @content;
   }

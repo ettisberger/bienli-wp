@@ -11,7 +11,8 @@
     <?php wp_head(); ?>
 </head>
 <body>
+
 <?php include(__DIR__ . '/includes/partials/header.partial.php'); ?>
 
-<main class="na-main">
+<main class="bienli-main">
 <?php $sectionCounter = 0; ?>

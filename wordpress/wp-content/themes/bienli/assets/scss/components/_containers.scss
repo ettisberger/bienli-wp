@@ -1,35 +1,35 @@
 @import "../common/base";
 
-.na-main {
+.bienli-main {
   height: 100%;
 }
 
-.na-inlay {
+.bienli-inlay {
   margin: 0 auto;
 
-  @include na-desktop {
+  @include bienli-desktop {
     width: 1200px;
   }
 
-  @include na-tablet {
+  @include bienli-tablet {
     padding: 0 20px;
   }
 
-  @include na-phone {
+  @include bienli-phone {
     padding: 0 20px;
   }
 }
 
-.na-section {
+.bienli-section {
   padding: 3rem 0;
 }
 
-.na-even {
+.bienli-even {
   color: $color-black;
   background-color: $color-white;
 }
 
-.na-odd {
+.bienli-odd {
   h2, h3, h4, h5 {
     color: $color-white;
   }
