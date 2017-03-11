@@ -20,9 +20,8 @@
             </div>
             <div class="col-lg-9 col-md-8 col-xs-12">
                 <div class="bienli-footer-box">
-                    <div class="bienli-footer-box-title"></div>
-                    <div class="bienli-footer-box-content">
-                    </div>
+                    <div class="bienli-footer-box-title"><?php the_field('column-right-title', 'option'); ?></div>
+                    <div class="bienli-footer-box-content"><?php the_field('column-right-text', 'option'); ?></div>
                 </div>
             </div>
         </div>
