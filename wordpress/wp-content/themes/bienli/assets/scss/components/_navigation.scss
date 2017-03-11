@@ -6,11 +6,17 @@
   li {
     display: inline-block;
     padding-right: 1rem;
-  }
 
-  a {
-     color: $color-white;
-     //text-transform: lowercase;
-     text-decoration: none;
-   }
+    &.current_page_item {
+      a {
+        font-weight: bold;
+      }
+    }
+
+    a {
+      color: $color-white;
+      //text-transform: lowercase;
+      text-decoration: none;
+    }
+  }
 }
