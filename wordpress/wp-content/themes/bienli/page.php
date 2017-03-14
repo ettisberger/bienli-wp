@@ -6,12 +6,10 @@
 
 <?php include(__DIR__ . '/includes/partials/pageheader.partial.php'); ?>
 
-<section id="bienli-first-section" class="bienli-section bienli-odd">
-    <div class="bienli-inlay">
-        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <?php the_content(); ?>
-        <?php endwhile; endif; ?>
-    </div>
-</section>
+<!--<section id="bienli-first-section" class="bienli-section bienli-odd">-->
+    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+        <?php the_content(); ?>
+    <?php endwhile; endif; ?>
+<!--</section>-->
 
 <?php get_footer(); ?>

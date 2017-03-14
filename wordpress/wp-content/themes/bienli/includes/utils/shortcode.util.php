@@ -12,7 +12,20 @@ class ShortcodeUtil
 
         $oddEvenStyle = ($sectionCounter++ % 2 == 0 ? 'bienli-even' : 'bienli-odd');
 
-        return '</div></section><section class="bienli-section ' . $oddEvenStyle . '"><div class="bienli-inlay">';
+        return '<section class="bienli-section ' . $oddEvenStyle . '">';
+    }
+
+    function renderSectionEnd($atts)
+    {
+        return '</section>';
+    }
+
+    function renderInlay(){
+        return '<div class="bienli-inlay">';
+    }
+
+    function renderInlayEnd(){
+        return '</div>';
     }
 
     function renderContact(){

@@ -19,5 +19,8 @@ show_admin_bar( false );
 add_filter('the_content', array($filterUtil, 'removeEmptyParagraphTag'), 22, 1);
 
 add_shortcode('section', array($shortcodeUtil, 'renderSection'));
+add_shortcode('section-end', array($shortcodeUtil, 'renderSectionEnd'));
+add_shortcode('inlay', array($shortcodeUtil, 'renderInlay'));
+add_shortcode('inlay-end', array($shortcodeUtil, 'renderInlayEnd'));
 add_shortcode('cakes', array($shortcodeUtil, 'renderCakes'));
 ?>
