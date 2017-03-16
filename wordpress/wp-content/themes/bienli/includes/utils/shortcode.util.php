@@ -36,6 +36,10 @@ class ShortcodeUtil
         return $this->render('cakes', null);
     }
 
+    function renderTeam(){
+        return $this->render('team', null);
+    }
+
     private function render($partial, $params)
     {
         ob_start();

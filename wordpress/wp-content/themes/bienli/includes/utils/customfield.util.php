@@ -29,9 +29,9 @@ class CustomFieldUtils {
         acf_add_options_sub_page(array(
             'page_title' 	=> 'Team',
             'menu_title'	=> 'Team',
-            'menu_slug' 	=> 'bbienli-team',
+            'menu_slug' 	=> 'bienli-team',
             'capability'	=> 'edit_posts',
-            'parent_slug'	=> 'bbienli-general-settings'
+            'parent_slug'	=> 'bienli-general-settings'
         ));
 
         acf_add_options_sub_page(array(
