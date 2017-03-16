@@ -1,3 +1,48 @@
 .bienli-cakes {
+  //column-count:         5;
+  //column-gap:           0px;
 
+  img {
+    //width: 100px;
+    //height: auto;
+    //display: block;
+  }
+
+  &-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    padding: 1rem;
+    background-color: $color-pink;
+
+    &-title {
+      color: $color-white;
+      @extend  %bienli-heading-2;
+    }
+
+    &:hover {
+      background-color: $color-white;
+    }
+
+    &:hover .bienli-cakes-item-title {
+      color: $color-pink;
+    }
+  }
+
+  &-item-container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
 }
+
+//.bienli-cake-item { width: 25%; }
+//.grid-item-2 { width: 50%; }

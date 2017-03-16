@@ -29,7 +29,7 @@ body, html {
   color: #333;
 }
 
-h1, h2, h3, h4, h5, .bienli-main-footer .bienli-footer-box .bienli-footer-box-title, h6 {
+h1, h2, .bienli-cakes-item-title, h3, h4, h5, .bienli-main-footer .bienli-footer-box .bienli-footer-box-title, h6 {
   font-weight: 600;
   color: #2180ff;
   line-height: 1.3em;
@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 4.10rem;
   }
 
-  h2 {
+  h2, .bienli-cakes-item-title {
     font-size: 2.80rem;
   }
 
@@ -334,5 +334,35 @@ ul {
 }
 .bienli-main-navigation li a {
   color: #FFF;
+  text-decoration: none;
+}
+
+.bienli-cakes-item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 300px;
+  padding: 1rem;
+  background-color: #ff69B4;
+}
+.bienli-cakes-item-title {
+  color: #FFF;
+}
+.bienli-cakes-item:hover {
+  background-color: #FFF;
+}
+.bienli-cakes-item:hover .bienli-cakes-item-title {
+  color: #ff69B4;
+}
+.bienli-cakes-item-container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.bienli-cakes-item-container a:hover {
   text-decoration: none;
 }
