@@ -8,5 +8,5 @@ Version: 0.1
 */
 
 //@import "../node_modules/flexboxgrid-sass/flexboxgrid";
-@import "layout/typography", "layout/_body", "layout/reset";
+@import "layout/reset", "layout/typography", "layout/_body";
 @import "components/containers", "components/footer", "components/header", "components/navigation", "components/cakes";

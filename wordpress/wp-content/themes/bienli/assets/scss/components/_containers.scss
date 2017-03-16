@@ -26,9 +26,22 @@
 
 .bienli-section {
   padding: 3rem 0;
+
+  h2 {
+    margin-bottom: 1.5em;
+    text-align: center;
+
+    &:first-child {
+      margin-top: #{-($line-height-headings - 1)/2};
+    }
+  }
 }
 
 .bienli-even {
+  h2, h3, h4, h5 {
+    color: $color-pink;
+  }
+
   color: $color-black;
   background-color: $color-white;
 }

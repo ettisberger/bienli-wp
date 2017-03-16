@@ -21,6 +21,40 @@ Version: 0.1
 /************************************************************/
 /* MIXINS */
 /************************************************************/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/************************************************************/
+/* RESPONSIVE */
+/************************************************************/
+/************************************************************/
+/* COLORS */
+/************************************************************/
+/************************************************************/
+/* LINE HEIGHTS */
+/************************************************************/
+/************************************************************/
+/* VARIABLES */
+/************************************************************/
+/************************************************************/
+/* MIXINS */
+/************************************************************/
 body, html {
   font-family: 'Open Sans', Helvetica, Verdana, Arial;
   font-size: 17px;
@@ -63,6 +97,69 @@ h1, h2, h3, h4, h5, h6 {
 
   h5, .bienli-main-footer .bienli-footer-box .bienli-footer-box-title {
     font-size: 1.15rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 999px) {
+  h1 {
+    font-size: 4.10rem;
+  }
+
+  h2, .bienli-cakes-item-title {
+    font-size: 2.80rem;
+  }
+
+  h3 {
+    font-size: 2.00rem;
+  }
+
+  h4 {
+    font-size: 1.50rem;
+  }
+
+  h5, .bienli-main-footer .bienli-footer-box .bienli-footer-box-title {
+    font-size: 1.15rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 999px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  h2, .bienli-cakes-item-title {
+    font-size: 2.75rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  h5, .bienli-main-footer .bienli-footer-box .bienli-footer-box-title {
+    font-size: 1.0rem;
+  }
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h2, .bienli-cakes-item-title {
+    font-size: 2.0rem;
+  }
+
+  h3 {
+    font-size: 1.50rem;
+  }
+
+  h4 {
+    font-size: 1.30rem;
+  }
+
+  h5, .bienli-main-footer .bienli-footer-box .bienli-footer-box-title {
+    font-size: 1.0rem;
   }
 }
 /************************************************************/
@@ -132,40 +229,6 @@ ul {
 /************************************************************/
 /* MIXINS */
 /************************************************************/
-body {
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-/************************************************************/
-/* RESPONSIVE */
-/************************************************************/
-/************************************************************/
-/* COLORS */
-/************************************************************/
-/************************************************************/
-/* LINE HEIGHTS */
-/************************************************************/
-/************************************************************/
-/* VARIABLES */
-/************************************************************/
-/************************************************************/
-/* MIXINS */
-/************************************************************/
 .bienli-main {
   height: 100%;
 }
@@ -197,10 +260,20 @@ ul {
 .bienli-section {
   padding: 3rem 0;
 }
+.bienli-section h2 {
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+.bienli-section h2:first-child {
+  margin-top: -0.15em;
+}
 
 .bienli-even {
   color: #333;
   background-color: #FFF;
+}
+.bienli-even h2, .bienli-even h3, .bienli-even h4, .bienli-even h5 {
+  color: #BE628F;
 }
 
 .bienli-odd {
@@ -242,7 +315,7 @@ ul {
   background-color: #333;
   color: #FFF;
   padding: 5rem 0;
-  border-top: 5px solid #ff69B4;
+  border-top: 5px solid #BE628F;
 }
 .bienli-main-footer .bienli-footer-box {
   -ms-flex: 1;
@@ -285,7 +358,7 @@ ul {
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(255, 105, 180, 0.5);
+  background-color: rgba(190, 98, 143, 0.5);
   z-index: 999;
   padding: 15px 30px;
 }
@@ -303,7 +376,7 @@ ul {
   background-size: cover;
   background-position: center;
   background-color: #567;
-  border-bottom: 1rem solid #ff69B4;
+  border-bottom: 1rem solid #BE628F;
   height: 60%;
 }
 
@@ -344,9 +417,9 @@ ul {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  height: 300px;
-  padding: 1rem;
-  background-color: #ff69B4;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #BE628F;
 }
 .bienli-cakes-item-title {
   color: #FFF;
@@ -355,13 +428,11 @@ ul {
   background-color: #FFF;
 }
 .bienli-cakes-item:hover .bienli-cakes-item-title {
-  color: #ff69B4;
+  color: #BE628F;
 }
 .bienli-cakes-item-container {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 .bienli-cakes-item-container a:hover {
   text-decoration: none;

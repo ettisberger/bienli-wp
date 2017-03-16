@@ -44,3 +44,70 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.15rem;
   }
 }
+
+@include bienli-small-desktop {
+  h1, %bienli-heading-1 {
+    font-size: 4.10rem;
+  }
+
+  h2, %bienli-heading-2 {
+    font-size: 2.80rem;
+  }
+
+  h3, %bienli-heading-3 {
+    font-size: 2.00rem;
+  }
+
+  h4, %bienli-heading-4 {
+    font-size: 1.50rem;
+  }
+
+  h5, %bienli-heading-5 {
+    font-size: 1.15rem;
+  }
+}
+
+@include bienli-tablet {
+  h1, %bienli-heading-1 {
+    font-size: 4.5rem;
+  }
+
+  h2, %bienli-heading-2 {
+    font-size: 2.75rem;
+  }
+
+  h3, %bienli-heading-3 {
+    font-size: 1.8rem;
+  }
+
+  h4, %bienli-heading-4 {
+    font-size: 1.5rem;
+  }
+
+  h5, %bienli-heading-5 {
+    font-size: 1.0rem;
+  }
+}
+
+
+@include bienli-phone {
+  h1, %bienli-heading-1 {
+    font-size: 2.25rem;
+  }
+
+  h2, %bienli-heading-2 {
+    font-size: 2.0rem;
+  }
+
+  h3, %bienli-heading-3 {
+    font-size: 1.50rem;
+  }
+
+  h4, %bienli-heading-4 {
+    font-size: 1.30rem;
+  }
+
+  h5, %bienli-heading-5 {
+    font-size: 1.0rem;
+  }
+}
