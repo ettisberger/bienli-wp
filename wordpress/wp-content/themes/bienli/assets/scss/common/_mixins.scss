@@ -32,3 +32,23 @@ $desktop-min-width: 1000px;
     @content;
   }
 }
+
+@mixin bienli-even {
+  @include -at-root('.bienli-even '&){
+    @content;
+  }
+}
+
+@mixin bienli-odd {
+  @include -at-root('.bienli-odd '&){
+    @content;
+  }
+}
+
+@mixin -at-root($selector) {
+  @at-root {
+    #{$selector} {
+      @content;
+    }
+  }
+}

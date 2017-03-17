@@ -420,12 +420,27 @@ ul {
   padding-top: 6rem;
   padding-bottom: 6rem;
   background-color: #BE628F;
+  position: relative;
+  overflow: hidden;
+  border-bottom: solid 4px #FFF;
+}
+.bienli-cakes-item img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.2;
 }
 .bienli-cakes-item-title {
   color: #FFF;
 }
+.bienli-cakes-item:hover img {
+  opacity: 0.5;
+}
 .bienli-cakes-item:hover {
-  background-color: #FFF;
+  background-color: #333;
+  border: solid 2px #BE628F;
 }
 .bienli-cakes-item:hover .bienli-cakes-item-title {
   color: #BE628F;

@@ -7,14 +7,32 @@
     padding-top: 6rem;
     padding-bottom: 6rem;
     background-color: $color-pink;
+    position: relative;
+    overflow: hidden;
+    border-bottom: solid 4px $color-white;
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: auto;
+      opacity: 0.2;
+    }
 
     &-title {
       color: $color-white;
-      @extend  %bienli-heading-2;
+      @extend %bienli-heading-2;
+    }
+
+    &:hover img {
+      opacity: 0.5;
     }
 
     &:hover {
-      background-color: $color-white;
+      background-color: $color-black;
+      border: solid 2px $color-pink;
+      //box-shadow: 1px 1px 5px 0 $color-black;
     }
 
     &:hover .bienli-cakes-item-title {
