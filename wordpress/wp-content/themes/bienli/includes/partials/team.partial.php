@@ -7,7 +7,9 @@
 
             ?>
             <div class="bienli-row">
-                <div class="bienli-column-12 bienli-column-small-desktop-12 bienli-column-tablet-12 bienli-column-phone-12"><?php echo $name; ?></div>
+                <div class="bienli-column-12 bienli-column-small-desktop-12 bienli-column-tablet-12 bienli-column-phone-12">
+                    <h3><?php echo $name; ?></h3>
+                </div>
                 <div class="bienli-team-text bienli-column-6 bienli-column-small-desktop-6 bienli-column-tablet-6 bienli-column-phone-12">
                     <div class=""><?php echo $description; ?></div>
                 </div>
