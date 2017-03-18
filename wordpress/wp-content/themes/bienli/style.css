@@ -63,7 +63,7 @@ body, html {
   color: #333;
 }
 
-h1, h2, .bienli-cakes-item-title, h3, h4, h5, .bienli-main-footer .bienli-footer-box .bienli-footer-box-title, h6 {
+h1, h2, h3, .bienli-cakes-item-title, h4, h5, .bienli-main-footer .bienli-footer-box .bienli-footer-box-title, h6 {
   font-weight: 600;
   color: #2180ff;
   line-height: 1.3em;
@@ -83,11 +83,11 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 4.10rem;
   }
 
-  h2, .bienli-cakes-item-title {
+  h2 {
     font-size: 2.80rem;
   }
 
-  h3 {
+  h3, .bienli-cakes-item-title {
     font-size: 2.00rem;
   }
 
@@ -104,11 +104,11 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 4.10rem;
   }
 
-  h2, .bienli-cakes-item-title {
+  h2 {
     font-size: 2.80rem;
   }
 
-  h3 {
+  h3, .bienli-cakes-item-title {
     font-size: 2.00rem;
   }
 
@@ -125,11 +125,11 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 4.5rem;
   }
 
-  h2, .bienli-cakes-item-title {
+  h2 {
     font-size: 2.75rem;
   }
 
-  h3 {
+  h3, .bienli-cakes-item-title {
     font-size: 1.8rem;
   }
 
@@ -146,11 +146,11 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2.25rem;
   }
 
-  h2, .bienli-cakes-item-title {
+  h2 {
     font-size: 2.0rem;
   }
 
-  h3 {
+  h3, .bienli-cakes-item-title {
     font-size: 1.50rem;
   }
 
@@ -468,7 +468,7 @@ ul {
     display: -ms-flexbox;
     display: flex;
   }
-  .flexbox .bienli-column-phone-12 {
+  .flexbox .bienli-column-phone-12, .flexbox .bienli-main-navigation li, .bienli-main-navigation .flexbox li {
     -ms-flex: 100%;
         flex: 100%;
     max-width: 100%;
@@ -1091,9 +1091,26 @@ ul {
   -ms-flex-pack: end;
       justify-content: flex-end;
 }
+@media (max-width: 767px) {
+  .bienli-main-navigation {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .bienli-main-navigation ul {
+    padding: 0;
+  }
+}
 .bienli-main-navigation li {
   display: inline-block;
   padding-right: 1rem;
+}
+@media (max-width: 767px) {
+  .bienli-main-navigation li {
+    padding: 0;
+    text-align: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
 }
 .bienli-main-navigation li.current_page_item a {
   font-weight: bold;
@@ -1112,7 +1129,7 @@ ul {
       align-items: center;
   position: relative;
   overflow: hidden;
-  height: 300px;
+  height: 200px;
   background-color: #BE628F;
 }
 .bienli-cakes-item img {

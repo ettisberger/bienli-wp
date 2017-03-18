@@ -7,7 +7,7 @@
     position: relative;
     overflow: hidden;
     //border-bottom: solid 4px $color-white;
-    height: 300px;
+    height: 200px;
     //margin: 1rem;
     background-color: $color-pink;
 
@@ -22,7 +22,7 @@
 
     &-title {
       color: $color-white;
-      @extend %bienli-heading-2;
+      @extend %bienli-heading-3;
     }
 
     a:hover {

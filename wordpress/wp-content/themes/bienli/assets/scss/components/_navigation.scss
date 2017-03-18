@@ -3,9 +3,24 @@
 .bienli-main-navigation {
   justify-content: flex-end;
 
+  @include bienli-phone {
+    justify-content: center;
+
+    ul {
+      padding: 0;
+    }
+  }
+
   li {
     display: inline-block;
     padding-right: 1rem;
+    @extend .bienli-column-phone-12;
+
+    @include bienli-phone {
+      padding: 0;
+      text-align: center;
+      justify-content: center;
+    }
 
     &.current_page_item {
       a {
