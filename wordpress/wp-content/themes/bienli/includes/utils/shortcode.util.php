@@ -28,8 +28,14 @@ class ShortcodeUtil
         return '</div>';
     }
 
-    function renderContact(){
-        return $this->render('contact', null);
+    function renderContact($atts, $content = null)
+    {
+        $attributes = shortcode_atts(array('adresse' => '', 'content' => $content), $atts);
+
+        $params['adresse'] = $attributes['adresse'];
+        $params['content'] = $attributes['content'];
+
+        return $this->render('contact', $params);
     }
 
     function renderCakes(){

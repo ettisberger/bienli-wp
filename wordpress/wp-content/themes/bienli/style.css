@@ -65,7 +65,7 @@ body, html {
 
 h1, h2, h3, .bienli-cakes-item-title, h4, h5, .bienli-main-footer .bienli-footer-box .bienli-footer-box-title, h6 {
   font-weight: 600;
-  color: #2180ff;
+  color: #BE628F;
   line-height: 1.3em;
 }
 
@@ -1076,6 +1076,13 @@ ul {
 @media (max-width: 767px) {
   .bienli-page-header {
     height: 30%;
+    background-size: 250%;
+  }
+}
+@media (min-width: 768px) and (max-width: 999px) {
+  .bienli-page-header {
+    height: 40%;
+    background-size: 150%;
   }
 }
 
@@ -1170,4 +1177,21 @@ ul {
 }
 .bienli-odd .bienli-team-text {
   color: #BE628F;
+}
+
+#bienli-contact-google-maps {
+  -ms-flex: 1;
+      flex: 1;
+  display: block;
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+#bienli-contact-google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
 }

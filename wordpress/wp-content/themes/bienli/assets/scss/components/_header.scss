@@ -36,5 +36,11 @@ $page-margin: 35px;
 
   @include bienli-phone {
     height: 30%;
+    background-size: 250%;
+  }
+
+  @include bienli-tablet {
+    height: 40%;
+    background-size: 150%;
   }
 }
