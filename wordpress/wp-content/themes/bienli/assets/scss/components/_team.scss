@@ -1,3 +1,11 @@
 .bienli-team {
 
+  &-text {
+    flex-direction: column;
+    color: $color-black;
+
+    @include bienli-odd {
+      color: $color-pink;
+    }
+  }
 }

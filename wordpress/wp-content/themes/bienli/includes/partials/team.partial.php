@@ -1,4 +1,4 @@
-<div class="bienli-team container-fluid">
+<div class="bienli-team">
     <div class="bienli-inlay">
         <?php
             $name = get_field('name','option');
@@ -6,12 +6,16 @@
             $image = get_field('image', 'option');
 
             ?>
-            <div class="bienli-team-container row">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="bienli-row">
+                <div class="bienli-team-text bienli-column-6 bienli-column-small-desktop-6 bienli-column-tablet-6 bienli-column-phone-12">
                     <div class=""><?php echo $name; ?></div>
                     <div class=""><?php echo $description; ?></div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><img src="<?php echo $image; ?>"/></div>
+                <div class="bienli-column-6 bienli-column-small-desktop-6 bienli-column-tablet-6 bienli-column-phone-12">
+                    <div class="bienli-team-image">
+                        <img src="<?php echo $image; ?>"/>
+                    </div>
+                </div>
             </div>
         <?php  ?>
     </div>

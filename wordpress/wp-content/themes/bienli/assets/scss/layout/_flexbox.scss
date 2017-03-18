@@ -1,0 +1,106 @@
+@import "../common/base";
+
+$columnWidths: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
+$growFactors: 0, 1, 2, 3, 4;
+$orderPositions: 1, 2, 3, 4, 5;
+
+/************************************************************/
+/* MIXINS */
+/************************************************************/
+@mixin bienli-column($suffix:"") {
+  @each $columnWidth in $columnWidths {
+    .bienli-column#{$suffix}-#{$columnWidth} {
+      flex: #{(($columnWidth/12)*100)+'%'};
+      max-width: #{(($columnWidth/12)*100)+'%'};
+      display: flex;
+    }
+  }
+}
+
+@mixin bienli-grow($suffix:"") {
+  @each $growFactor in $growFactors {
+    .bienli-grow#{$suffix}-#{$growFactor} {
+      flex-grow: $growFactor;
+    }
+  }
+}
+
+@mixin bienli-order($suffix:"") {
+  @each $orderPosition in $orderPositions {
+    .bienli-order#{$suffix}-#{$orderPosition} {
+      order: $orderPosition;
+    }
+  }
+}
+
+@mixin bienli-hide($suffix:"") {
+  .bienli-hide#{$suffix} {
+    display: none;
+  }
+}
+
+/************************************************************/
+/* CLASSES */
+/************************************************************/
+@include bienli-flexbox {
+  .bienli-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+
+    &.bienli-row-vcenter {
+      align-items: center;
+    }
+
+    &.bienli-row-hcenter {
+      justify-content: center;
+    }
+
+    &.bienli-row-small-padding {
+      margin: -0.5rem -1rem;
+      *[class^="bienli-column-"] {
+        padding: 0.5rem 1rem;
+      }
+    }
+
+    &.bienli-row-padding {
+      margin: -1rem;
+      *[class^="bienli-column-"] {
+        padding: 1rem;
+      }
+    }
+  }
+
+  @include bienli-column;
+  @include bienli-grow;
+  @include bienli-order;
+  @include bienli-hide;
+
+  @include bienli-phone {
+    @include bienli-column('-phone');
+    @include bienli-grow('-phone');
+    @include bienli-order('-phone');
+    @include bienli-hide('-phone');
+  }
+
+  @include bienli-tablet {
+    @include bienli-column('-tablet');
+    @include bienli-grow('-tablet');
+    @include bienli-order('-tablet');
+    @include bienli-hide('-tablet');
+  }
+
+  @include bienli-small-desktop {
+    @include bienli-column('-small-desktop');
+    @include bienli-grow('-small-desktop');
+    @include bienli-order('-small-desktop');
+    @include bienli-hide('-small-desktop');
+  }
+
+  @include bienli-desktop {
+    @include bienli-column('-desktop');
+    @include bienli-grow('-desktop');
+    @include bienli-order('-desktop');
+    @include bienli-hide('-desktop');
+  }
+}

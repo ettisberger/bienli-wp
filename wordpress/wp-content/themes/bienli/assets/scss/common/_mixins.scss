@@ -33,6 +33,12 @@ $desktop-min-width: 1000px;
   }
 }
 
+@mixin bienli-flexbox {
+  @include -at-root('.flexbox '&){
+    @content;
+  }
+}
+
 @mixin bienli-even {
   @include -at-root('.bienli-even '&){
     @content;

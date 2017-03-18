@@ -4,12 +4,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    background-color: $color-pink;
     position: relative;
     overflow: hidden;
     border-bottom: solid 4px $color-white;
+    height: 300px;
+    //margin: 1rem;
 
     img {
       position: absolute;
@@ -40,14 +39,13 @@
     }
   }
 
-  &-item-container {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-
-    a {
-      &:hover {
-        text-decoration: none;
-      }
-    }
-  }
+  //&-item-container {
+  //  background-color: $color-pink;
+  //
+  //  a {
+  //    &:hover {
+  //      text-decoration: none;
+  //    }
+  //  }
+  //}
 }
