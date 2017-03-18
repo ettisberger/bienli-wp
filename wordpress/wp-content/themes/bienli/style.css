@@ -1112,8 +1112,8 @@ ul {
       align-items: center;
   position: relative;
   overflow: hidden;
-  border-bottom: solid 4px #FFF;
   height: 300px;
+  background-color: #BE628F;
 }
 .bienli-cakes-item img {
   position: absolute;
@@ -1126,12 +1126,14 @@ ul {
 .bienli-cakes-item-title {
   color: #FFF;
 }
+.bienli-cakes-item a:hover {
+  text-decoration: none;
+}
 .bienli-cakes-item:hover img {
   opacity: 0.5;
 }
 .bienli-cakes-item:hover {
   background-color: #333;
-  border: solid 2px #BE628F;
 }
 .bienli-cakes-item:hover .bienli-cakes-item-title {
   color: #BE628F;

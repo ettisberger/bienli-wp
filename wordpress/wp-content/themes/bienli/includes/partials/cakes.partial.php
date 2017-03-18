@@ -16,7 +16,7 @@
                     <div class="bienli-cakes-item-title">
                         <?php echo $name; ?>
                     </div>
-                    <img src="<?php echo $image['url']; ?>"/>
+<!--                    <img src="--><?php //echo $image['url']; ?><!--"/>-->
                 </a>
            </div>
     <?php endwhile; ?>

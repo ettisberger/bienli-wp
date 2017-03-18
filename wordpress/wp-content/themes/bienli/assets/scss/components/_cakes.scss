@@ -6,9 +6,10 @@
     align-items: center;
     position: relative;
     overflow: hidden;
-    border-bottom: solid 4px $color-white;
+    //border-bottom: solid 4px $color-white;
     height: 300px;
     //margin: 1rem;
+    background-color: $color-pink;
 
     img {
       position: absolute;
@@ -24,13 +25,17 @@
       @extend %bienli-heading-2;
     }
 
+    a:hover {
+      text-decoration: none;
+    }
+
     &:hover img {
       opacity: 0.5;
     }
 
     &:hover {
       background-color: $color-black;
-      border: solid 2px $color-pink;
+      //border: solid 2px $color-pink;
       //box-shadow: 1px 1px 5px 0 $color-black;
     }
 
@@ -38,14 +43,4 @@
       color: $color-pink;
     }
   }
-
-  //&-item-container {
-  //  background-color: $color-pink;
-  //
-  //  a {
-  //    &:hover {
-  //      text-decoration: none;
-  //    }
-  //  }
-  //}
 }
