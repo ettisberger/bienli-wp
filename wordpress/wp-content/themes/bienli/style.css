@@ -1057,6 +1057,8 @@ ul {
 @media (max-width: 767px) {
   .bienli-main-header {
     padding: 5px 10px;
+    position: relative;
+    background-color: #be628f;
   }
 }
 .bienli-main-header-logo-icon {
@@ -1070,6 +1072,11 @@ ul {
   background-color: #567;
   border-bottom: 1rem solid #BE628F;
   height: 60%;
+}
+@media (max-width: 767px) {
+  .bienli-page-header {
+    height: 30%;
+  }
 }
 
 /************************************************************/

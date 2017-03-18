@@ -13,6 +13,9 @@ $page-margin: 35px;
 
   @include bienli-phone {
     padding: 5px 10px;
+    position: relative;
+    background-color: rgba($color-pink, 1);
+
   }
 
   &-logo {
@@ -30,4 +33,8 @@ $page-margin: 35px;
   background-color: $color-blue-grey;
   border-bottom: 1rem solid $color-pink;
   height: 60%;
+
+  @include bienli-phone {
+    height: 30%;
+  }
 }
