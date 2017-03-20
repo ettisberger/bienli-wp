@@ -1070,7 +1070,7 @@ ul {
   background-size: cover;
   background-position: center;
   background-color: #567;
-  border-bottom: 1rem solid #BE628F;
+  border-bottom: 1rem solid #B2EBF4;
   height: 60%;
 }
 @media (max-width: 767px) {
@@ -1143,31 +1143,59 @@ ul {
       align-items: center;
   position: relative;
   overflow: hidden;
-  height: 200px;
-  background-color: #BE628F;
+  padding-bottom: 25%;
+  position: relative;
+}
+@media (min-width: 768px) and (max-width: 999px) {
+  .bienli-cakes-item {
+    padding-bottom: 33.33333%;
+  }
+}
+@media (max-width: 767px) {
+  .bienli-cakes-item {
+    padding-bottom: 100%;
+  }
+}
+.bienli-cakes-item-inner {
+  position: absolute;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+  background-color: #B2EBF4;
 }
 .bienli-cakes-item img {
-  position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: auto;
-  opacity: 0.2;
-}
-.bienli-cakes-item-title {
-  color: #FFF;
-}
-.bienli-cakes-item a:hover {
-  text-decoration: none;
+  padding: 0.5rem;
 }
 .bienli-cakes-item:hover img {
   opacity: 0.5;
 }
-.bienli-cakes-item:hover {
-  background-color: #333;
+.bienli-cakes-item-title {
+  position: absolute;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  color: #B2EBF4;
+  background-color: #FFF;
+  display: none;
+  box-shadow: 0px 0px 0px 4px #B2EBF4;
 }
 .bienli-cakes-item:hover .bienli-cakes-item-title {
-  color: #BE628F;
+  display: block;
+}
+.bienli-cakes-item a:hover {
+  text-decoration: none;
+}
+.bienli-cakes-item:hover {
+  background-color: #333;
 }
 
 .bienli-team-text {

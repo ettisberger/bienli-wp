@@ -12,11 +12,13 @@
         }
             ?>
            <div class="bienli-cakes-item bienli-column-3 bienli-column-small-desktop-3 bienli-column-tablet-4 bienli-column-phone-12">
-                <a href="<?php echo $link;?>">
-                    <div class="bienli-cakes-item-title">
-                        <?php echo $name; ?>
-                    </div>
-<!--                    <img src="--><?php //echo $image['url']; ?><!--"/>-->
+               <a href="<?php echo $link;?>">
+                   <div class="bienli-cakes-item-inner">
+                       <img src="<?php echo $image['url']; ?>"/>
+                       <div class="bienli-cakes-item-title">
+                           <?php echo $name; ?>
+                       </div>
+                   </div>
                 </a>
            </div>
     <?php endwhile; ?>

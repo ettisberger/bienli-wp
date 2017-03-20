@@ -25,4 +25,8 @@ add_shortcode('inlay-end', array($shortcodeUtil, 'renderInlayEnd'));
 add_shortcode('cakes', array($shortcodeUtil, 'renderCakes'));
 add_shortcode('team', array($shortcodeUtil, 'renderTeam'));
 add_shortcode('contact', array($shortcodeUtil, 'renderContact'));
+
+// disable emoji crap
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
 ?>
