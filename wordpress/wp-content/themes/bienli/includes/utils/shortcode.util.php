@@ -42,6 +42,10 @@ class ShortcodeUtil
         return $this->render('cakes', null);
     }
 
+    function renderCakeList(){
+        return $this->render('cake-list', null);
+    }
+
     function renderTeam(){
         return $this->render('team', null);
     }

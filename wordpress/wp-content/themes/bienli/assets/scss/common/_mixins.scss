@@ -3,7 +3,7 @@
 /************************************************************/
 $tablet-min-width: 768px;
 $small-desktop-min-width: 992px;
-$desktop-min-width: 1000px;
+$desktop-min-width: 1200px;
 
 /************************************************************/
 /* MIXINS */
@@ -16,7 +16,7 @@ $desktop-min-width: 1000px;
 }
 
 @mixin bienli-tablet {
-  @media (min-width: #{$tablet-min-width}) and (max-width: #{$desktop-min-width - 1px}) {
+  @media (min-width: #{$tablet-min-width}) and (max-width: #{$small-desktop-min-width - 1px}) {
     @content;
   }
 }

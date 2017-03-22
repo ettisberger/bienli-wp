@@ -1,8 +1,17 @@
-<!--<div class="bienli-cakes row" data-isotope='{ "itemSelector": ".bienli-cakes-item", "layoutMode": "packery" }'>-->
 <div class="bienli-cakes">
     <div class="bienli-cakes-items bienli-row">
 
-    <?php while ( have_rows('cakes', 'option') ) : the_row();
+    <?php
+
+    $counter = 0;
+
+    while ( have_rows('cakes', 'option') ) : the_row();
+
+        if($counter == 8){
+            break;
+        }
+
+        $counter++;
         $name = get_sub_field('name','option');
         $image = get_sub_field('image', 'option');
         $link = get_sub_field('link', 'option');
