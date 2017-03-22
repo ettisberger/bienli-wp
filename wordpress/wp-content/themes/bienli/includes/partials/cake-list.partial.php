@@ -2,6 +2,8 @@
     <div class="bienli-inlay">
         <?php
         $counter = 0;
+        $classOrderReversed ="bienli-order-2 bienli-order-small-desktop-2 bienli-order-tablet-2 bienli-order-phone-2";
+
         while ( have_rows('cakes', 'option') ) : the_row();
             $name = get_sub_field('name','option');
             $image = get_sub_field('image', 'option');
@@ -13,7 +15,7 @@
             }
                 ?>
                <div class="bienli-cake-list-item bienli-row">
-                   <div class="bienli-cake-list-item-image bienli-column-4 bienli-column-small-desktop-4 bienli-column-tablet-4 bienli-column-phone-12">
+                   <div class="bienli-cake-list-item-image bienli-column-4 bienli-column-small-desktop-4 bienli-column-tablet-4 bienli-column-phone-12 <?php if($counter % 2 != 0){ echo $classOrderReversed; } ?>">
                         <img src="<?php echo $image['url']; ?>"/>
                    </div>
                    <div class="bienli-column-8 bienli-column-small-desktop-8 bienli-column-tablet-8 bienli-column-phone-12">
