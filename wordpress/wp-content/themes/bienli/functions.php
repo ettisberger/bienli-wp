@@ -23,6 +23,7 @@ add_shortcode('section-end', array($shortcodeUtil, 'renderSectionEnd'));
 add_shortcode('inlay', array($shortcodeUtil, 'renderInlay'));
 add_shortcode('inlay-end', array($shortcodeUtil, 'renderInlayEnd'));
 add_shortcode('cakes', array($shortcodeUtil, 'renderCakes'));
+add_shortcode('cake-list', array($shortcodeUtil, 'renderCakeList'));
 add_shortcode('team', array($shortcodeUtil, 'renderTeam'));
 add_shortcode('contact', array($shortcodeUtil, 'renderContact'));
 
