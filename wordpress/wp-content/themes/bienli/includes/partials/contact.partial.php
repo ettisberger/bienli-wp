@@ -1,8 +1,8 @@
-<script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script>
+<script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js&key=AIzaSyCc8rqPEIEFA34oFDTrW8EkaPQAXrnNgqg'></script>
 
 <script type="application/javascript">
     var xmlhttp = new XMLHttpRequest();
-    var url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + <?php echo json_encode($params['adresse']); ?>;
+    var url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + <?php echo json_encode($params['adresse']); ?> + "&key=AIzaSyCc8rqPEIEFA34oFDTrW8EkaPQAXrnNgqg";
 
     xmlhttp.onreadystatechange = function() {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
@@ -33,15 +33,9 @@
 
 <div class="bienli-contact">
     <div class="bienli-inlay">
-        <div class="bienli-row bienli-row-hcenter bienli-row-padding">
-            <div class="bienli-column-8 bienli-column-phone-12">
-                <div id='bienli-contact-google-maps'></div>
-            </div>
-            <div class="bienli-column-4 bienli-column-phone-12">
-                <div>
-                    <?php echo $params['content']; ?>
-                </div>
-            </div>
-        </div>
+
+
+
+
     </div>
 </div>

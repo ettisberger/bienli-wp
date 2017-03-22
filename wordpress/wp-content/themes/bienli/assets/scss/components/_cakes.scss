@@ -84,6 +84,10 @@
     &-image {
       justify-content: center;
       align-items: center;
+
+      img {
+        box-shadow: 0 0 0 10px $color-white;
+      }
     }
 
     &-content {

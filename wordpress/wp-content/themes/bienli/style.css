@@ -1217,6 +1217,9 @@ ul {
   -ms-flex-align: center;
       align-items: center;
 }
+.bienli-cake-list-item-image img {
+  box-shadow: 0 0 0 10px #FFF;
+}
 .bienli-cake-list-item-content {
   display: -ms-flexbox;
   display: flex;
