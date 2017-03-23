@@ -8,4 +8,10 @@
       color: $color-pink;
     }
   }
+
+  &-image {
+    @include bienli-phone {
+      margin-top: 2rem;
+    }
+  }
 }

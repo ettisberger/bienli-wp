@@ -1238,6 +1238,11 @@ ul {
 .bienli-odd .bienli-team-text {
   color: #BE628F;
 }
+@media (max-width: 767px) {
+  .bienli-team-image {
+    margin-top: 2rem;
+  }
+}
 
 #bienli-contact-google-maps {
   -ms-flex: 1;
