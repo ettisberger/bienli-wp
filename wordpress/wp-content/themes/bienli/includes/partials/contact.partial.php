@@ -33,9 +33,15 @@
 
 <div class="bienli-contact">
     <div class="bienli-inlay">
-
-
-
-
+        <div class="bienli-row bienli-row-hcenter bienli-row-padding">
+            <div class="bienli-column-8 bienli-column-phone-12">
+                <div id='bienli-contact-google-maps'></div>
+            </div>
+            <div class="bienli-column-4 bienli-column-phone-12">
+                <div>
+                    <?php echo $params['content']; ?>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

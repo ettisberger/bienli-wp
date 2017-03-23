@@ -1076,7 +1076,7 @@ ul {
 @media (max-width: 767px) {
   .bienli-page-header {
     height: 40%;
-    background-size: 250%;
+    background-size: 200%;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
